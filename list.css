@@ -1,0 +1,9 @@
+ul a:link.list1{
+	font-size:14px;
+	text-decoration:none;
+}
+ul a:hover.list2{
+	font-size:14px;
+	color:#b9f605;
+	text-decoration:none;
+}

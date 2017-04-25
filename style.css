@@ -1,0 +1,31 @@
+body{
+        font-family:"Arial";
+        font-size:12px;
+        color:grey;
+        line-height:2em;
+}
+a:link{
+     color:#727272;
+     text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+
+#index{
+	font-size:14px;
+	color:#b9f605;
+	font-weight:bold;
+}
+
+a.white{
+	color:white;
+}
+a:hover.green{
+	color:#b9f605;
+	text-decoration:none;
+}
+#orange{
+	color:#fdb306;
+	text-decoration:none;
+}
