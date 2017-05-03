@@ -1,0 +1,43 @@
+body{
+	font:12px Arial;
+	color:grey;
+	line-height:2em;
+}
+table.bg{
+	background-image:url(images/bg.gif);
+	background-repeat:no-repeat;
+}
+table.banner{
+	background-image:url(images/banner.jpg);
+	background-repeat:no-repeat;
+}
+a:link{
+	color:#727272;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#orange{
+	color:#fdb306;
+	text-decoration:none
+}
+a.white{
+	color:white;
+}
+a:hover.green{
+	color:#b9f605;
+	text-decoration:none;
+}
+#index{
+	font-size:14px;
+	color:#b9f605;
+	font-weight:bold;
+}
+ul{
+	list-style-type:none;
+}
+input{
+	width:200px;
+	height:2em;
+}

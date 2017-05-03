@@ -1,0 +1,13 @@
+a#news{
+	font:bold 16px '微软雅黑';
+	color:#65a7d0;
+}
+ul.c{
+	list-style-type:circle;
+}
+td.bg1{
+	background-image:url(images/pot.gif);
+}
+ul.white{
+	color:white;
+}
