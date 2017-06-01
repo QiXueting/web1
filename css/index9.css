@@ -1,0 +1,127 @@
+div#center{
+	width:1080px;
+	height:750px;
+	margin-left:220px;
+}
+div#center1{
+	height:300px;
+	margin-left:20px;
+}
+ul{
+	color:#844044;
+}
+div#center11{
+	background-image:url(../images/news_bg.png);
+	width:324px;
+	height:242px;
+	padding-top:12px;
+	text-align:center;
+	float:left;
+	margin-right:25px;
+	margin-top:30px;
+}
+div#center12{
+	float:left;
+	margin-right:25px;
+	margin-top:30px;
+}
+div#center121{
+	float:left;
+	background-image:url(../images/change.png);
+	background-repeat:no-repeat;
+}
+div#center1221{
+	float:left;
+}
+div#center1222{
+	float:right;
+}
+p#qu{
+	padding-top:7px;
+}
+div#center13{
+	float:left;
+	margin-top:30px;
+}
+div#center131{
+	text-align:center;
+}
+div#center132{
+	background-image:url(../images/board_bg.png);
+	width:277px;
+	height:205px;
+}
+div#center211{
+	background-image:url(../images/academic.png);
+	width:341px;
+	height:54px;
+}
+div#center221{
+	background-image:url(../images/book_news.png);
+	width:341px;
+	height:54px;
+}
+div#center21{
+	float:left;
+}
+div#center22{
+	float:left;
+}
+div#center23{
+	width:280px;
+	float:right;
+}
+div#center24{
+	background-image:url(../images/fengcai.png);
+	width:694px;
+	height:214px;
+	float:left;
+	margin:5px 5px 5px 35px;
+	text-align:right;
+}
+img#show{
+	padding:10px 30px 15px 70px;
+}
+div#show1{
+	background-image:url(../images/show_bg.png);
+	height:362px;
+}
+img#mingjia{
+	margin:25px 25px 0px 25px;
+}
+div#ouyang{
+	margin:10px 30px 0px 25px;
+	line-height:20px;
+}
+span#name1{
+	font-weight:bolder;
+	color:#b70000;
+}
+div#fengcai{
+	margin:20px 30px 20px 20px;
+}
+img#view{
+	margin-left:190px;
+}
+li.list1{
+	list-style-type:square;
+	margin:15px 20px;
+	font:11px '宋体';
+}
+li.list2{
+	margin:16px 20px;
+	font:10px '宋体';
+}
+img.more{
+	margin-left:50px;
+}
+img.more1{
+	margin-left:330px;
+}
+a:link{
+	color:#844044;
+	text-decoration:none;
+}
+a:visited{
+	color:#844044;
+	text-decoration:none;
