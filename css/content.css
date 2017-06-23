@@ -1,0 +1,22 @@
+div#center{
+	padding-left:150px;
+	height:430px;
+	width:1200px;
+}
+div#h{
+	font:18px '微软雅黑';
+	color:grey;
+	margin:30px 0px;
+	text-align:center;
+}
+span#span3{
+	color:#06c7f2;
+}
+div#head{
+	height:600px;
+	background-image:url(../images/banner3.jpg);
+	background-repeat:no-repeat;
+}
+p{
+	color:grey;
+}
