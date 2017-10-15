@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>calculators</title>
+	<style>
+		table{
+			border:1px grey solid;
+		}
+		td{
+			border:1px grey solid;
+			width:80px;
+			height:80px;
+		}
+		input{
+			margin-left:10px;
+			width:60px;
+			height:60px;
+		}
+		input#text1{
+			width:225px;
+			height:60px;
+			font-size:20px;
+			text-align:right;
+		}
+	</style>
+	<script type="text/javascript">
+		function C(){
+			document.getElementById('text1').value="";
+		}
+		function num(num){
+			document.getElementById('text1').value=document.getElementById('text1').value + num;
+		}
+		function count(){
+			document.getElementById('text1').value=eval(document.getElementById('text1').value);
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="3"><input type="text" name="text1" id="text1"></td>
+			<td><input type="button" name="C" id="C" value="C" onclick="C();"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="1" id="1" value="1" onclick="num(1);"/></td>
+			<td><input type="button" name="2" id="2" value="2" onclick="num(2);"/></td>
+			<td><input type="button" name="3" id="3" value="3" onclick="num(3);"/></td>
+			<td><input type="button" name="jia" id="jia" value="+" onclick="num('+');"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="4" id="4" value="4" onclick="num(4);"/></td>
+			<td><input type="button" name="5" id="5" value="5" onclick="num(5);"/></td>
+			<td><input type="button" name="6" id="6" value="6" onclick="num(6);"/></td>
+			<td><input type="button" name="jian" id="jian" value="-" onclick="num('-');"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="" id="7" value="7" onclick="num(7);"/></td>
+			<td><input type="button" name="" id="8" value="8" onclick="num(8);"/></td>
+			<td><input type="button" name="" id="9" value="9" onclick="num(9);"/></td>
+			<td><input type="button" name="cheng" id="cheng" value="*" onclick="num('*');"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="" id="0" value="0" onclick="num(0);"/></td>
+			<td><input type="button" name="point" id="point" value="." onclick="num('.');"/></td>
+			<td><input type="button" name="count" id="count" value="=" onclick="count();"/></td>
+			<td><input type="button" name="chu" id="chu" value="/" onclick="num('/');"/></td>
+		</tr>
+	</table>
+</body>
+</html>
