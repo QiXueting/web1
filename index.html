@@ -1,58 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>index</title>
-	<link rel="stylesheet" href="css/index.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/autochange.js"></script>
+	<title>图片自动滚动</title>
 </head>
 <body>
-	<div id="head">
-		<div id="nav">
-			<div id="logo">Traveling  Design</div>
-			<div id="nav1">
-				<ul>
-					<li class="nav1"><a href="index.html" class="nav" id="index">首页</a></li>
-					<li class="nav1"><a href="list.html" class="nav">旅游攻略</a></li>
-					<li class="nav1"><a href="" class="nav">精选路线</a></li>
-					<li class="nav1"><a href="" class="nav">关于我们</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="center">
-		<div class="center1">
-			<div class="title"><span class="span1">推荐游记</span></div>
-			<div>
-			<div class="img"><a href="" class="img1"><img src="images/img1.jpg" alt=""></a><br/>沐浴海风</div>
-			<div class="img"><a href="" class="img1"><img src="images/img2.jpg" alt=""></a><br/>惬意时光</div><br>
-			<div class="img"><a href="" class="img1"><img src="images/img3.jpg" alt=""></a><br/>异国风情</div>
-			<div class="img"><a href="" class="img1"><img src="images/img4.jpg" alt=""></a><br/>深潜之旅</div>
-			</div>
-		</div>
-		<div class="center1">
-			<div class="title"><span class="span1">海岛旅游篇</span></div>
-			<div><a href=""><img src="images/img5.jpg" alt="" width="500"></a></a><br/>马尔代夫之旅</div>
-		</div>
-		<div class="center1">
-			<div class="title"><span class="span1">旅游攻略</span></div>
-			<div id="list1">
-				<ul>
-					<li class="list2"><a href="content.html" class="list3">嵊泗小时光 流浪在泗礁本岛 3日</a></li>
-					<li class="list2"><a href="content.html" class="list3">普吉岛3天，独创美食地图+玩乐地图</a></li>
-					<li class="list2"><a href="content.html" class="list3">普吉岛 .2014</a></li>
-					<li class="list2"><a href="content.html" class="list3"><三亚亚龙湾3-5日自由行（5冠）>亚龙湾维景酒店</a></li>
-					<li class="list2"><a href="content.html" class="list3">三亚亚龙湾3-5日自由行</a></li>
-					<li class="list2"><a href="content.html" class="list3">2016下半年最佳旅行地大盘点</a></li>
-					<li class="list2"><a href="content.html" class="list3">丽江+香格里拉5日跟团游</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="foot">
-		<span id="span3">————————————————————————————————————————————————————————————————————————————</span><br/>
-		河北师范大学 软件学院 2017年WEB1期末作业<br/>
-		姓名：齐雪婷 学号：2016011556
-	</div>
+	<div id="picScroll" onmouseout="action();"onmouseover="Clear();">
+		<span id="picScroll1">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+		<span id="picScroll2">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+ 	</div> 
 </body>
 </html>
