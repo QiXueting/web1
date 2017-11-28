@@ -1,49 +1,8 @@
-*{
-	margin:0px;
-	padding:0px;
+#picScroll{
+	white-space:nowrap;
+	overflow:hidden;
+	width:600px;
 }
-div#logo{
-	color:white;
-	font:28px '微软雅黑';
-	font-weight:bolder;
-	float:left;
-}
-div#nav{
-	width:1100px;
-	padding:75px 0px 0px 200px;
-}
-div#nav1{
-	float:right;
-}
-ul li.nav1{
-	display:block;
-	float:left;
-}
-li a.nav{
-	display:block;
-	width:120px;
-	height:38px;
-	background-color:white;
-	font:16px '微软雅黑';
-	text-align:center;
-	padding-top:12px;
-	text-decoration:none;
-	border-right:1px solid #cccccc;
-}
-li a:link.nav{
-	color:black;
-}
-li a:visited.nav{
-	color:black;
-}
-li a:hover.nav{
-	color:red;
-	border-bottom:2px solid red;
-}
-li a#index{
-	color:red;
-	border-bottom:2px solid red;
-}
-div#foot{
-	text-align:center;
+img{
+	width:250px;
 }
