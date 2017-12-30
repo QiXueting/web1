@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEB2</title>
+	<script type="text/javascript" src="jquery-3.2.1.slim.min.js"></script>
+	<style>
+		body{
+			background-color:#FFF;
+		}
+		div#div1{
+			width:1200px;
+			text-align:center;
+			font:60px "华文新魏";
+		}
+		div.divrow1{
+			float:left;
+			margin:20px;
+		}
+		div#div2{
+			width:800px;
+		}
+		div#div3{
+			padding-top:13px;
+		}
+		ul{
+			font-size:20px;
+			margin:0px;
+			padding:0px;
+		}
+		#nav{
+			margin-top: 20px;
+			margin-left: 50px;
+			list-style:none;
+			line-height:40px;
+		}
+		#nav a:link,#nav a:visited{
+			display:block;
+			width:150px;
+			color: #666;
+			text-align:center;
+			text-decoration:none;
+			background:#CCC;
+		}
+		#nav a:hover{
+			color: #FFF;
+			font-weight: bold;
+			background:#999;
+		}
+		#nav ul{list-style: none;}
+		#nav li{
+			float:left;
+			width:150px;
+		}
+		#nav li ul li a:hover{
+			background:#ccc;
+		}
+
+		#nav li ul{
+			display:none;
+		}
+		#nav li.subMenuShow ul{
+			display:block;
+		}
+		div#div12{
+			padding-left:45px;
+			margin-top:180px;
+			height:220px;
+		}
+		img{
+			width:350px;
+			margin-left:20px;
+		}
+		h7#span1{
+			font-size:28px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		QQ空间-- <h7 id="span1">萌宠相册</h7>
+	</div>
+	<div id="div11">
+		<div class="divrow1" id="div2">
+			<ul id="nav">
+				<li><a  href="#">主页</a>
+					<ul >
+						<li><a href="#">个人介绍</a></li>
+						<li><a href="#">学习历程</a></li>
+					</ul>
+				</li>
+				<li><a href="#">日志</a>
+					<ul>
+						<li><a href="#">技术精粹</a></li>
+						<li><a href="#">生活点滴</a></li>
+					</ul>
+				</li>
+				<li><a href="#">相册</a>
+					<ul>
+						<li><a href="#" onclick="but1();">萌宠相册</a></li>
+						<li><a href="#" onclick="but2();">明星图集</a></li>
+					</ul>
+				</li>
+				<li><a href="#">留言板</a>
+				</li>
+				<li><a href="#">说说</a>
+				</li>
+			</ul>
+		</div>
+		<div class="divrow1" id="div3">
+			<form>
+				<table>
+					<tr>
+						<td>用户名：</td>
+						<td><input type="text" id="username" name="username" /><span id="errorTip"></span></td>
+					</tr>
+					<tr>
+						<td>密码：</td>
+						<td><input type="password" id="passwd"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><input id="submit" type="submit" value="登录" />
+						<input id="submit" type="submit" value="注册" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<div id="div12">
+		<img src="s1.jpeg" alt="" id="img1">
+		<img src="s2.jpg" alt="" id="img2">
+		<img src="s3.jpg" alt="" id="img3">
+	</div>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			var username = document.getElementById("username");	
+			username.onblur = checkUsername;
+			var liNodes = document.getElementsByTagName("li");
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "";
+				}
+			}
+		}
+		var s=document.getElementById("span1");
+		var i1=document.getElementById("img1");
+		var i2=document.getElementById("img2");
+		var i3=document.getElementById("img3");
+		function but1(){
+			s.innerHTML="萌宠相册";
+			i1.src="s1.jpeg";
+			i2.src="s2.jpg";
+			i3.src="s3.jpg";
+		}
+		function but2(){
+			s.innerHTML="明星图集";
+			i1.src="s4.jpg";
+			i2.src="s5.jpg";
+			i3.src="s6.jpg";
+		}
+		function checkUsername() {
+			var username=document.getElementById('username');
+			var oldspan=document.getElementsByTagName('span');
+			if(username.value==''){
+				if(oldspan.length>0){
+					oldspan[0].parentNode.removeChild(oldspan[0]);
+				}
+				var newspan=document.createElement('span');
+				username.parentNode.appendChild(newspan);
+				var txtnode=document.createTextNode('必须输入用户名');
+				newspan.appendChild(txtnode);
+				newspan.style.color='red';
+			}
+			else{
+				if(oldspan.length>0){
+					oldspan[0].parentNode.removeChild(oldspan[0]);
+				}
+				var newspan=document.createElement('span');
+				username.parentNode.appendChild(newspan);
+				newspan.style.color='red';
+			}	
+		}
+	</script>
+</body>
+</html>
